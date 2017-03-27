@@ -70,7 +70,7 @@ Make sure that you are in your directory to activate Debugging<br>
   you should see Debugging Activated, if you were successful.<br>
    2. DEBUG=false node src/server.js<br>
   if you donot want debgugging activated.<br>
-
+  
 # Coding Style
   <br>
   This project utilized eslint-config-airbnb for the code styling.<br>
