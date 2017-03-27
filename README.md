@@ -91,10 +91,22 @@ Ready. Set. GO.<br>
   1. .get('/go/4EydSo') // This has to be in the database
 
 If you're lucky the test should come back passed<br>
-If not, try and try again...
-
+If not, try and try again...<br>
+<br>
 # Deployment
-
-In order to deploy to Digital Ocean you must first do:
-
+<br>
+## digital ocean
+<br>
+In order to deploy to Digital Ocean you must first do:<br>
+<br>
 git push live
+<br>
+## heroku
+<br>
+When deploying to heroku use <br>
+
+git push origin master<br>
+
+If you haven't lost your mind at this point you must push the master branch.<br>
+It will only go into the staging process if the tests pass codeship<br>
+Codeship allows you to test anything before promotion through heroku.<br>
