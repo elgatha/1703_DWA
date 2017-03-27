@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/elgatha/1703_DWA/issues"
   },
-  "homepage": "https://github.com/elgatha/1703_DWA#readme"
+  "homepage": "https://github.com/elgatha/1703_DWA#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
 }
