@@ -60,3 +60,21 @@ POST /api/v1/urls/:id<br>
   Update URL based on id<br>
 DELETE  /api/v1/urls/:id<br>
   Delete url based on id<br>
+
+
+# Utility Tool
+Make sure that you are in your directory to activate Debugging<br>
+
+  Pleas follow the following steps:<br>
+   1. DEBUG=true node src/server.js<br>
+  you should see Debugging Activated, if you were successful.<br>
+   2. DEBUG=false node src/server.js<br>
+  if you donot want debgugging activated.<br>
+
+# Coding Style
+  <br>
+  This project utilized eslint-config-airbnb for the code styling.<br>
+  This was accomplished by installing the plugin for Atom.<br>
+  You can find documentation about eslint here:<br> [eslint-airbnb](https://www.npmjs.com/package/eslint-config-airbnb) <br>
+  and for installing on Atom you can find the documentation here.<br>
+  [eslint for Atom](https://atom.io/packages/eslint).
