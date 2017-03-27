@@ -1,0 +1,19 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "url shortener for DWA 1703",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elgatha/1703_DWA.git"
+  },
+  "author": "Lee <paperdmedia@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elgatha/1703_DWA/issues"
+  },
+  "homepage": "https://github.com/elgatha/1703_DWA#readme"
+}
