@@ -60,3 +60,13 @@ POST /api/v1/urls/:id<br>
   Update URL based on id<br>
 DELETE  /api/v1/urls/:id<br>
   Delete url based on id<br>
+
+
+# Utility Tool
+Make sure that you are in your directory to activate Debugging<br>
+
+  Pleas follow the following steps:<br>
+   1. DEBUG=true node src/server.js<br>
+  you should see Debugging Activated, if you were successful.<br>
+   2. DEBUG=false node src/server.js<br>
+  if you donot want debgugging activated.<br>
