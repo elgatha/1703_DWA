@@ -1,9 +1,9 @@
 // These are dependecies
-var express = require('express');
+const express = require('express');
 //This parses the json data
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 // This is express
-var app = express();
+const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
 app.use('/', require('./routes')(express));
 
 // This is the configuration for the server
- var port = process.env.PORT || 3000;
+ const port = process.env.PORT || 3000;
 // This is the export server
 exports.server = app.listen(port, () => {
   console.log('Server Active On', port);

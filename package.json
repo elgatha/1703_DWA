@@ -18,6 +18,9 @@
   "homepage": "https://github.com/elgatha/1703_DWA#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
-    "express": "^4.15.2"
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "mysql": "^2.13.0",
+    "sequelize": "^3.30.3"
   }
 }

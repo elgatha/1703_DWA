@@ -4,29 +4,59 @@
 
 <br>
 # url-shortener<br>
- created by Elgatha Lee for WDD program at Full Sail University.<br>
+created by Elgatha Lee for WDD program at Full Sail University.<br>
+
+# Purpose
 <br>
-# Purpose<br>
- This url shortener is to allow a user the ability to enter a regular url and for the<br> app to return a shortened url.<br>
+ This url shortener is to allow a user the ability to enter a regular url and for the app to return a shortened url.<br>
+
+# Installation
 <br>
-# Installation<br>
  Please follow the steps below to install the app.<br>
-<br>
- 1. Click the GREEN BUTTON on the right "clone or Download" at the top of the page.<br>
- 2. After that step is completed you will have to open up your terminal and download the<br> following things:<br>
+
+ 1. Click the GREEN BUTTON on the right "clone or Download" at the top of the page.
+ 2. After that step is completed you will have to open up your terminal and download the following things:
   a. Install npm "npm install"<br>
   b. Install nodemon "npm install nodemon"<br>
   c.  Start your server "node src/server.js"<br>
  3. Your server should be running on port 3000!<br>
-<br>
+
  You can use postman in Chrome if you don't have it on your computer<br>
  Do a POST request to localhost:3000/api/v1/url<br>
  This will return a shortened URL<br>
+
+ for #APICRUD---<br>
+ You are going to need mySQL, so you will have to create a .env file<br>
+
+ Do this by typing into terminal  { touch .env } <br>
+ then add the following information <br>
+
+	DB_NAME=[database name] <br>
+	DB_USER=[username] <br>
+	DB_PASS=[password] <br>
+	DB_HOST=[host] <br>
+	DB_SCHEMA=mysql <br>
+	DB_PORT=[port] <br>
 <br>
-# Endpoints<br>
+
+You can check the status in Postman by doing a GET request to localhost:3000/api/v1/url<br>
+
+# Starting Point
+<br>
+The starting point is always localhost:3000<br>
+<br>
+# Endpoints
 <br>
 Status<br>
 GET: /status<br>
-<br>
+
 POST /api/v1/urls<br>
-   The shortened URL should appear.
+  Shortened URL created<br>
+GET /api/v1/urls<br>
+  Display every URL<br>
+GET /api/v1/urls/:id<br>
+  Display URL based on id<br>
+POST /api/v1/urls/:id<br>
+  Update URL based on id<br>
+DELETE  /api/v1/urls/:id<br>
+  Delete url based on id<br>

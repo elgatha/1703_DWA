@@ -4,12 +4,20 @@ var shortUrl = require('../modules/url');
 module.exports = (express) => {
   var router = express.Router();
 
-  router.get('/status', (req, res) => {
-    console.log("connect");
-    res.json({
-      healthy: true,
+  router.get('/', (req, res) => {
+      res.json({ main: 'hit!' });
     });
-  });
+    router.get('/go/:shortUrl', (req, res) => {
+        const request = req;
+        const response = res;
+        request.body.shortUrl = request.params.shortUrl;
+        url.findMidjURL(request.body, (err) => {
+          response.status(500).json(err);
+        }, (data) => {
+          // response redirects to alpha url
+          response.redirect(data.alpha_url);
+        });
+      });
 
   //get the url
   router.post('/api/v1/url/', function ( req, res ) {
