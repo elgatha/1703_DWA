@@ -77,4 +77,18 @@ Make sure that you are in your directory to activate Debugging<br>
   This was accomplished by installing the plugin for Atom.<br>
   You can find documentation about eslint here:<br> [eslint-airbnb](https://www.npmjs.com/package/eslint-config-airbnb) <br>
   and for installing on Atom you can find the documentation here.<br>
-  [eslint for Atom](https://atom.io/packages/eslint).
+  [eslint for Atom](https://atom.io/packages/eslint).<br>
+
+# Unit Testing
+<br>
+In order for this to work you MUST HAVE mocha and chai installed using npm globally.<br>
+Once you have done this you can run a test for each route.<br>
+
+For the /go/:shortenedURL test the short url of 4EydSo<br>
+for this to be accomplished 4EydSo needs to be in your database.<br>
+
+Ready. Set. GO.<br>
+  1. .get('/go/4EydSo') // This has to be in the database
+
+If you're lucky the test should come back passed<br>
+If not, try and try again...
