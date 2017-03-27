@@ -2,6 +2,10 @@
 const express = require('express');
 //This parses the json data
 const bodyParser = require('body-parser');
+
+// debugs
+const debug = require("./modules/debug");
+
 // This is express
 const app = express();
 
@@ -18,4 +22,7 @@ app.use('/', require('./routes')(express));
 // This is the export server
 exports.server = app.listen(port, () => {
   console.log('Server Active On', port);
+  if (process.env.DEBUG) {
+     debug.debug('Debugging is Active!', 'Success');
+ }
 });
